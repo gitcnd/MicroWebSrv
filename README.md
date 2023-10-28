@@ -1,18 +1,4 @@
-
-<h3>
-  <p align="center">
-    Also check out the new ESP32 MPY-Jama free IDE and the latest MicroWebSrv2 below:
-  </p>
-</h3>
-
-<p align="center">
-  <a href="https://github.com/jczic/ESP32-MPY-Jama"><img src="https://github.com/jczic/ESP32-MPY-Jama/raw/master/img/ESP32%20MPY-Jama%20NEW.png" alt="New microWebSrv2" width="350" valign="middle"></a>                  
-  <a href="https://github.com/jczic/MicroWebSrv2"><img src="microWebSrv2.png" alt="New microWebSrv2" width="350" valign="middle"></a>
-</p>
-
----
-
-<br />
+This fork has the compression PR incorporated
 
 ### MicroWebSrv is a micro HTTP Web server that supports WebSockets, html/python language templating and routing handlers, for MicroPython (principally used on ESP32 and [Pycom](http://www.pycom.io) modules. Now supports all variants of [Pyboard D-series](https://store.micropython.org/category/pyboard%20D-series) from the makers of Micropython)
 
