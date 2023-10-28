@@ -1,6 +1,7 @@
 """
 The MIT License (MIT)
 Copyright © 2018 Jean-Christophe Bos & HC² (www.hc2.fr)
+Consider https://python-minifier.com/
 """
 
 
@@ -266,6 +267,13 @@ class MicroWebSrv :
         for ext in self._mimeTypes :
             if filename.endswith(ext + encoding_ext) :
                 return self._mimeTypes[ext]
+        return None
+  
+    def GetEncodingFromFilename(self, filename) :
+        filename = filename.lower()
+        for ext, enc in self._encodings :
+            if ext and filename.endswith(ext) :
+                return enc
         return None
 
     # ----------------------------------------------------------------------------
@@ -610,7 +618,7 @@ class MicroWebSrv :
         # ------------------------------------------------------------------------
 
         def _writeServerHeader(self) :
-            self._writeHeader("Server", "MicroWebSrv by JC`zic")
+            self._writeHeader("Server", "MicroWebSrv")
 
         # ------------------------------------------------------------------------
 
